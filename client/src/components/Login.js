@@ -53,7 +53,7 @@ const Login = ()=> {
 
 <form>
 <div className="mb-3">
-<label for="email1" className="form-label">Email address</label>
+<label htmlFor="email1" className="form-label">Email address</label>
 <input type="email" className="form-control" id="email1" aria-describedby="emailHelp" 
   name= "email"
   value={user.email}
@@ -64,7 +64,7 @@ const Login = ()=> {
 
 </div>
 <div className="mb-3">
-<label for="password1" className="form-label">Password</label>
+<label htmlFor="password1" className="form-label">Password</label>
 <input type="password" className="form-control" id="password1" 
   name="password"
   value={user.password}
@@ -74,7 +74,7 @@ const Login = ()=> {
 />
 </div>
 
-<button type="submit" onClick={PostData}   class="btn btn-primary">Submit</button> <br/>
+<button type="submit" onClick={PostData}   className="btn btn-primary">Submit</button> <br/>
 
 <NavLink to="/signup" className="text-center"> Sign up?</NavLink>
 </form>
